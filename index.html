@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Final</title>
+    <script src="js/team.js" defer></script>
+    <script src="js/final.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/final.css" />
+</head>
+
+<body>
+
+        <h1>My Pokemon Team!</h1>
+        <h4>This is my team if I were a Pokemon trainer! Use the buttons below to learn about them or build your own team of 6!</h4>
+    
+        <div id="controls">
+            <div id="status" style="display:none;"></div>
+            <button onclick="createItem()">Create!</button>
+            <button onclick="readItem()">Read!</button>
+            <button onclick="deleteItem()">Delete!</button>
+        </div>    
+    
+        <div id="readResult">*Read Results Display Here*</div>
+        <div id="displayArea"></div>
+
+        <form id="editForm" style="display:none;">
+            <input type="text" id="editId" readonly>
+            <input type="text" id="editName" placeholder="Enter new Name">
+            <input type="text" id="editType" placeholder="Enter new Type">
+            <button type="submit">Update!</button>
+        </form>
+
+        <p> ⬇ Click Here to check out the other 1,020 Pokemon you could add to your team!</p>
+        <div class="container">
+            <a href="https://www.pokemon.com/us/pokedex">
+                <img src="images/pokeball.webp" alt="Pokeball" width="100" height="100"></a> 
+        </div>
+
+</body>
+</html>
